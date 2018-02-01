@@ -4,7 +4,21 @@ using namespace std;
 int main() {
 	char continueProgram = 'y';
 
-	do {
+
+	for (int i = 99; i >= 0; i--) {
+
+		if (i == 1) {
+			cout << i << " bottle of beer on the wall. " << endl;
+		}
+		else if (i == 0) {
+			cout << "No more bottles of beer on the wall. " << endl;
+		}
+		else {
+			cout << i << " bottles of bear on the wall." << endl;
+		}
+	}
+		cin >> continueProgram;
+	/*do {
 
 		cout << "Do you want to continue (y/n)";
 		cin >> continueProgram;
@@ -19,6 +33,6 @@ int main() {
 		default:
 			continueProgram = 'y';
 		}
-	} while (continueProgram == 'y');
+	} while (continueProgram == 'y');*/
 	return 0;
 }
